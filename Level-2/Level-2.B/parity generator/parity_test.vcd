@@ -1,0 +1,46 @@
+$date
+	Fri Jul  7 10:07:48 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module par_gen_tb $end
+$var wire 1 ! oddP $end
+$var wire 1 " evenP $end
+$var reg 6 # Din [5:0] $end
+$scope module DUT $end
+$var wire 6 $ Din [5:0] $end
+$var wire 1 ! oddP $end
+$var wire 1 " evenP $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b10110 $
+b10110 #
+1"
+0!
+$end
+#5
+1!
+0"
+b100001 #
+b100001 $
+#10
+0!
+1"
+b1101 #
+b1101 $
+#15
+1!
+0"
+b100111 #
+b100111 $
+#20
+b11 #
+b11 $
+#25

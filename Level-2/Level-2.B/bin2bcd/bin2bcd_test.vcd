@@ -1,0 +1,89 @@
+$date
+	Sun Jul  2 18:52:36 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module bin2bcd_tb $end
+$var wire 12 ! bcd [11:0] $end
+$var reg 8 " bin [7:0] $end
+$scope module DUT $end
+$var wire 8 # bin [7:0] $end
+$var reg 12 $ bcd [11:0] $end
+$var reg 4 % hundreds [3:0] $end
+$var reg 4 & ones [3:0] $end
+$var reg 7 ' temp [6:0] $end
+$var reg 4 ( tens [3:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b1 (
+b1100 '
+b10 &
+b0 %
+b10010 $
+b1100 #
+b1100 "
+b10010 !
+$end
+#5
+b100000001 !
+b100000001 $
+b1 &
+b0 (
+b1 '
+b1 %
+b1100101 "
+b1100101 #
+#10
+b100010001 !
+b100010001 $
+b1 (
+b1011 '
+b1101111 "
+b1101111 #
+#15
+b1000110000 !
+b1000110000 $
+b0 &
+b11 (
+b11110 '
+b10 %
+b11100110 "
+b11100110 #
+#20
+b110000000 !
+b110000000 $
+b1000 (
+b1010000 '
+b1 %
+b10110100 "
+b10110100 #
+#25
+b100000000 !
+b100000000 $
+b0 (
+b0 '
+b1100100 "
+b1100100 #
+#30
+b100000110 !
+b100000110 $
+b110 &
+b110 '
+b1101010 "
+b1101010 #
+#35
+b100110000 !
+b100110000 $
+b0 &
+b11 (
+b11110 '
+b10000010 "
+b10000010 #
+#40

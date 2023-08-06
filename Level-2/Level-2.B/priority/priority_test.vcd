@@ -1,0 +1,44 @@
+$date
+	Sat Jul  1 11:07:31 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module priority_tb $end
+$var wire 1 ! z $end
+$var wire 2 " Y [1:0] $end
+$var reg 4 # W [3:0] $end
+$scope module DUT $end
+$var wire 4 $ W [3:0] $end
+$var reg 2 % Y [1:0] $end
+$var reg 1 ! z $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b11 %
+b1100 $
+b1100 #
+b11 "
+1!
+$end
+#5
+b10 "
+b10 %
+b100 #
+b100 $
+#10
+b1 "
+b1 %
+b11 #
+b11 $
+#15
+b0 "
+b0 %
+b1 #
+b1 $
+#20

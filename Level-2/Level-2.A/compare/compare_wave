@@ -1,0 +1,88 @@
+#! /usr/bin/vvp
+:ivl_version "11.0 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/system.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/vhdl_sys.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/vhdl_textio.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/v2005_math.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/va_math.vpi";
+S_0x55777a814320 .scope module, "comp4bit_tb" "comp4bit_tb" 2 1;
+ .timescale 0 0;
+v0x55777a826c10_0 .var "A", 3 0;
+v0x55777a826cf0_0 .net "Aeq", 0 0, v0x55777a8267f0_0;  1 drivers
+v0x55777a826dc0_0 .net "Agt", 0 0, v0x55777a8268b0_0;  1 drivers
+v0x55777a826ec0_0 .net "Als", 0 0, v0x55777a826980_0;  1 drivers
+v0x55777a826f90_0 .var "B", 3 0;
+S_0x55777a8144b0 .scope module, "DUT" "comp4bit" 2 5, 3 1 0, S_0x55777a814320;
+ .timescale 0 0;
+    .port_info 0 /INPUT 4 "A";
+    .port_info 1 /INPUT 4 "B";
+    .port_info 2 /OUTPUT 1 "Aeq";
+    .port_info 3 /OUTPUT 1 "Agt";
+    .port_info 4 /OUTPUT 1 "Als";
+v0x55777a7dbba0_0 .net "A", 3 0, v0x55777a826c10_0;  1 drivers
+v0x55777a8267f0_0 .var "Aeq", 0 0;
+v0x55777a8268b0_0 .var "Agt", 0 0;
+v0x55777a826980_0 .var "Als", 0 0;
+v0x55777a826a40_0 .net "B", 3 0, v0x55777a826f90_0;  1 drivers
+E_0x55777a812df0 .event edge, v0x55777a826a40_0, v0x55777a7dbba0_0;
+    .scope S_0x55777a8144b0;
+T_0 ;
+    %wait E_0x55777a812df0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x55777a8267f0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x55777a8268b0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x55777a826980_0, 0, 1;
+    %load/vec4 v0x55777a7dbba0_0;
+    %load/vec4 v0x55777a826a40_0;
+    %cmp/e;
+    %jmp/0xz  T_0.0, 4;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x55777a8267f0_0, 0, 1;
+    %jmp T_0.1;
+T_0.0 ;
+    %load/vec4 v0x55777a826a40_0;
+    %load/vec4 v0x55777a7dbba0_0;
+    %cmp/u;
+    %jmp/0xz  T_0.2, 5;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x55777a8268b0_0, 0, 1;
+    %jmp T_0.3;
+T_0.2 ;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x55777a826980_0, 0, 1;
+T_0.3 ;
+T_0.1 ;
+    %jmp T_0;
+    .thread T_0, $push;
+    .scope S_0x55777a814320;
+T_1 ;
+    %vpi_call 2 8 "$dumpfile", "compare_wave.vcd" {0 0 0};
+    %vpi_call 2 9 "$dumpvars", 32'sb00000000000000000000000000000000, S_0x55777a814320 {0 0 0};
+    %pushi/vec4 10, 0, 4;
+    %store/vec4 v0x55777a826c10_0, 0, 4;
+    %pushi/vec4 8, 0, 4;
+    %store/vec4 v0x55777a826f90_0, 0, 4;
+    %delay 5, 0;
+    %pushi/vec4 9, 0, 4;
+    %store/vec4 v0x55777a826c10_0, 0, 4;
+    %pushi/vec4 9, 0, 4;
+    %store/vec4 v0x55777a826f90_0, 0, 4;
+    %delay 5, 0;
+    %pushi/vec4 5, 0, 4;
+    %store/vec4 v0x55777a826c10_0, 0, 4;
+    %pushi/vec4 7, 0, 4;
+    %store/vec4 v0x55777a826f90_0, 0, 4;
+    %delay 5, 0;
+    %vpi_call 2 14 "$finish" {0 0 0};
+    %end;
+    .thread T_1;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "comp4bit_tb.v";
+    "comp4bit.v";

@@ -1,0 +1,17 @@
+// Learn in the given order....
+
+1) half-adder
+2) full-adder
+3) mux2to1
+4) mux4to1
+5) mux16to1
+6) JK_FF
+7) DFF
+8) T_FF
+9) bin2gray
+10) gray2bin
+11) enc2to4
+12) dec2to4
+13) compare
+14) seg7
+

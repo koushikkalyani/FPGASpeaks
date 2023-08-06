@@ -1,0 +1,95 @@
+$date
+	Sun Jul  2 19:29:34 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module gcd_tb $end
+$var wire 8 ! gcd [7:0] $end
+$var reg 8 " a [7:0] $end
+$var reg 8 # b [7:0] $end
+$scope module DUT $end
+$var wire 8 $ a [7:0] $end
+$var wire 8 % b [7:0] $end
+$var reg 8 & ain [7:0] $end
+$var reg 8 ' bin [7:0] $end
+$var reg 8 ( gcd [7:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b10100 (
+b10100 '
+b10100 &
+b1010000 %
+b10100 $
+b1010000 #
+b10100 "
+b10100 !
+$end
+#5
+b101 !
+b101 (
+b101 '
+b101 &
+b101101 #
+b101101 %
+b1010000 "
+b1010000 $
+#10
+b100 !
+b100 (
+b100 '
+b100 &
+b101100 #
+b101100 %
+b1010100 "
+b1010100 $
+#15
+b1 !
+b1 (
+b1 '
+b1 &
+b111 #
+b111 %
+b10 "
+b10 $
+#20
+b10100 !
+b10100 (
+b10100 '
+b10100 &
+b10100000 #
+b10100000 %
+b10110100 "
+b10110100 $
+#25
+b101101 !
+b101101 (
+b101101 '
+b101101 &
+b101101 #
+b101101 %
+b1011010 "
+b1011010 $
+#30
+b1 !
+b1 (
+b1 '
+b1 &
+b100 #
+b100 %
+b1010011 "
+b1010011 $
+#35
+b1 '
+b1 &
+b111 #
+b111 %
+b1101 "
+b1101 $
+#40

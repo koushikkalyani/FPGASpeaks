@@ -1,0 +1,49 @@
+$date
+	Sat Jul  1 11:46:28 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module comp4bit_tb $end
+$var wire 1 ! Als $end
+$var wire 1 " Agt $end
+$var wire 1 # Aeq $end
+$var reg 4 $ A [3:0] $end
+$var reg 4 % B [3:0] $end
+$scope module DUT $end
+$var wire 4 & A [3:0] $end
+$var wire 4 ' B [3:0] $end
+$var reg 1 # Aeq $end
+$var reg 1 " Agt $end
+$var reg 1 ! Als $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b1000 '
+b1010 &
+b1000 %
+b1010 $
+0#
+1"
+0!
+$end
+#5
+1#
+0"
+b1001 %
+b1001 '
+b1001 $
+b1001 &
+#10
+1!
+0#
+b111 %
+b111 '
+b101 $
+b101 &
+#15

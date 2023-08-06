@@ -1,0 +1,46 @@
+$date
+	Sat Jul  1 10:20:40 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module enc4to2_tb $end
+$var wire 2 ! Y [1:0] $end
+$var reg 4 " W [3:0] $end
+$scope module DUT $end
+$var wire 4 # W [3:0] $end
+$var reg 2 $ Y [1:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx $
+b0 #
+b0 "
+bx !
+$end
+#5
+b0 !
+b0 $
+b1 "
+b1 #
+#10
+b1 !
+b1 $
+b10 "
+b10 #
+#15
+b10 !
+b10 $
+b100 "
+b100 #
+#20
+b11 !
+b11 $
+b1000 "
+b1000 #
+#25

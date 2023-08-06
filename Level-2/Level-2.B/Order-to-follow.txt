@@ -1,0 +1,14 @@
+// Learn in the given order...
+
+1) bin2bcd
+2) minority_detector
+3) priority
+4) moduloNbitcounter
+5) parity generator
+6) gcd
+7) Factorial
+8) ALU
+9) Ring_counter
+10) synchronous counter
+11) bidirectional_shift_register 
+

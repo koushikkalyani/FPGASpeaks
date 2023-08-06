@@ -1,0 +1,264 @@
+$date
+	Sun Jul  9 11:30:53 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module jc_tb $end
+$var wire 4 ! q [3:0] $end
+$var reg 1 " clk $end
+$var reg 1 # rst $end
+$scope module dut $end
+$var wire 1 " clk $end
+$var wire 1 # rst $end
+$var wire 1 $ w $end
+$var wire 4 % q [3:0] $end
+$scope module d1 $end
+$var wire 1 " clk $end
+$var wire 1 $ din $end
+$var wire 1 & q_bar $end
+$var wire 1 # rst $end
+$var reg 1 ' q $end
+$upscope $end
+$scope module d2 $end
+$var wire 1 " clk $end
+$var wire 1 ( din $end
+$var wire 1 ) q_bar $end
+$var wire 1 # rst $end
+$var reg 1 * q $end
+$upscope $end
+$scope module d3 $end
+$var wire 1 " clk $end
+$var wire 1 + din $end
+$var wire 1 , q_bar $end
+$var wire 1 # rst $end
+$var reg 1 - q $end
+$upscope $end
+$scope module d4 $end
+$var wire 1 " clk $end
+$var wire 1 . din $end
+$var wire 1 / q_bar $end
+$var wire 1 # rst $end
+$var reg 1 0 q $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+00
+1/
+0.
+0-
+1,
+0+
+0*
+1)
+0(
+0'
+1&
+b0 %
+1$
+0#
+0"
+b0 !
+$end
+#5
+0&
+1(
+b1 !
+b1 %
+1'
+1"
+#10
+0"
+#15
+0)
+1+
+b11 !
+b11 %
+1*
+1"
+#20
+0"
+#25
+0,
+1.
+b111 !
+b111 %
+1-
+1"
+#30
+0"
+#35
+0$
+0/
+b1111 !
+b1111 %
+10
+1"
+#40
+0"
+#45
+1&
+0(
+b1110 !
+b1110 %
+0'
+1"
+#50
+0"
+#55
+1)
+0+
+b1100 !
+b1100 %
+0*
+1"
+#60
+0"
+#65
+1,
+0.
+b1000 !
+b1000 %
+0-
+1"
+#70
+0"
+#75
+1$
+1/
+b0 !
+b0 %
+00
+1"
+#80
+0"
+#85
+0&
+1(
+b1 !
+b1 %
+1'
+1"
+#90
+0"
+#95
+0)
+1+
+b11 !
+b11 %
+1*
+1"
+#100
+0"
+#105
+0,
+1.
+b111 !
+b111 %
+1-
+1"
+#110
+0"
+#115
+0$
+0/
+b1111 !
+b1111 %
+10
+1"
+#120
+0"
+#125
+1&
+0(
+b1110 !
+b1110 %
+0'
+1"
+#130
+0"
+#135
+1)
+0+
+b1100 !
+b1100 %
+0*
+1"
+#140
+0"
+#145
+1,
+0.
+b1000 !
+b1000 %
+0-
+1"
+#150
+0"
+#155
+1$
+1/
+b0 !
+b0 %
+00
+1"
+#160
+0"
+#165
+0&
+1(
+b1 !
+b1 %
+1'
+1"
+#170
+0"
+#175
+0)
+1+
+b11 !
+b11 %
+1*
+1"
+#180
+0"
+#185
+0,
+1.
+b111 !
+b111 %
+1-
+1"
+#190
+0"
+#195
+0$
+0/
+b1111 !
+b1111 %
+10
+1"
+#200
+0"
+#205
+1&
+0(
+b1110 !
+b1110 %
+0'
+1"
+#210
+0"
+#215
+1)
+0+
+b1100 !
+b1100 %
+0*
+1"

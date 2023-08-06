@@ -1,0 +1,54 @@
+#! /usr/bin/vvp
+:ivl_version "11.0 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/system.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/vhdl_sys.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/vhdl_textio.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/v2005_math.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/va_math.vpi";
+S_0x55c0f330f160 .scope module, "par_gen_tb" "par_gen_tb" 2 1;
+ .timescale 0 0;
+P_0x55c0f330f2f0 .param/l "N" 0 2 2, +C4<00000000000000000000000000000110>;
+v0x55c0f3320a30_0 .var "Din", 5 0;
+v0x55c0f3320b20_0 .net "evenP", 0 0, L_0x55c0f3320cf0;  1 drivers
+v0x55c0f3320bf0_0 .net "oddP", 0 0, L_0x55c0f3320e30;  1 drivers
+S_0x55c0f330f390 .scope module, "DUT" "par_gen" 2 6, 3 1 0, S_0x55c0f330f160;
+ .timescale 0 0;
+    .port_info 0 /INPUT 6 "Din";
+    .port_info 1 /OUTPUT 1 "evenP";
+    .port_info 2 /OUTPUT 1 "oddP";
+P_0x55c0f330f6a0 .param/l "N" 0 3 2, +C4<00000000000000000000000000000110>;
+L_0x55c0f3320e30 .functor NOT 1, L_0x55c0f3320cf0, C4<0>, C4<0>, C4<0>;
+v0x55c0f32d5cf0_0 .net "Din", 5 0, v0x55c0f3320a30_0;  1 drivers
+v0x55c0f3320820_0 .net "evenP", 0 0, L_0x55c0f3320cf0;  alias, 1 drivers
+v0x55c0f33208e0_0 .net "oddP", 0 0, L_0x55c0f3320e30;  alias, 1 drivers
+L_0x55c0f3320cf0 .reduce/xor v0x55c0f3320a30_0;
+    .scope S_0x55c0f330f160;
+T_0 ;
+    %vpi_call 2 9 "$dumpfile", "parity_test.vcd" {0 0 0};
+    %vpi_call 2 10 "$dumpvars", 32'sb00000000000000000000000000000000, S_0x55c0f330f160 {0 0 0};
+    %pushi/vec4 22, 0, 6;
+    %store/vec4 v0x55c0f3320a30_0, 0, 6;
+    %delay 5, 0;
+    %pushi/vec4 33, 0, 6;
+    %store/vec4 v0x55c0f3320a30_0, 0, 6;
+    %delay 5, 0;
+    %pushi/vec4 13, 0, 6;
+    %store/vec4 v0x55c0f3320a30_0, 0, 6;
+    %delay 5, 0;
+    %pushi/vec4 39, 0, 6;
+    %store/vec4 v0x55c0f3320a30_0, 0, 6;
+    %delay 5, 0;
+    %pushi/vec4 3, 0, 6;
+    %store/vec4 v0x55c0f3320a30_0, 0, 6;
+    %delay 5, 0;
+    %vpi_call 2 17 "$finish" {0 0 0};
+    %end;
+    .thread T_0;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "par_gen_tb.v";
+    "par_gen.v";
