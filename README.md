@@ -5,7 +5,7 @@ Work-flow
 
 Create a Git-Hub repository namely "FPGAspeaks" under which you will have all your work collection.
 
-In each level first you need to read main.pdf which will guide you what and how you are supposed to in that particular level.
+In each level first you need to read main.pdf which will guide you what and how you are supposed to in that particular level.you need to download main.pdf to access links mentioned in the pdf.
 
 As you go ahead standard of each level increases. After certain level you should have basic-to-good knowledge of system design in verilog.
 
