@@ -10,7 +10,7 @@
 8) T_FF
 9) bin2gray
 10) gray2bin
-11) enc2to4
+11) enc4to2
 12) dec2to4
 13) compare
 14) seg7
